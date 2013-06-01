@@ -51,7 +51,61 @@
       <p><strong>&hearts; UPUP 舉排加油小人名人牆 &hearts;</strong></p>
     </header>
 
-    <section class="content">{{ content }}</section>
+    <section class="content">
+
+      <a href="http://haniboi.com/" class="notice">
+        <img src="/assets/logo.png" alt="upup"/>dssd
+        製作屬於你的加油小人 &hearts; Haniboi &times; 嘖嘖 聯合出品
+      </a>
+
+      <div class="wall fly-centre">
+        <a href="/" class="block">名人</a>
+        <a href="/press" class="block">媒體</a>
+        <a href="/bloggers" class="block">品牌、部落客</a>
+        <a href="/popular" class="block">熱門</a>
+      </div>
+
+      <div class="wall">
+        {% assign half = page.stories.size | divided_by: 2 %}
+
+        <div class="column_left">
+        {% for story in page.stories limit: half, offset: 0 %}
+          <div class="story">
+            <img src="{{ story.avatar }}" alt="{{ story.author }}" class="author-img" />
+            <span class="author-name">{{ story.author }}</span>
+            <div class="image-wrapper">
+              <div class="story-content">{{ story.message }}</div>
+              <a href="{{ story.origin }}" class="story-link" target="_blank" id="{{ story.author }}">
+                <img src="{{ story.image }}" alt="{{ story.message }}" class="story-img" />
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+
+        <div class="column_right">
+        {% for story in page.stories offset: half %}
+          <div class="story">
+            <img src="{{ story.avatar }}" alt="{{ story.author }}" class="author-img" />
+            <span class="author-name">{{ story.author }}</span>
+            <div class="image-wrapper">
+              <div class="story-content">{{ story.message }}</div>
+              <a href="{{ story.origin }}" class="story-link" target="_blank" id="{{ story.author }}">
+                <img src="{{ story.image }}" alt="{{ story.message }}" class="story-img" />
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+
+      </div>
+
+      <a href="http://haniboi.com/" class="notice">
+        <img src="/assets/logo.png" alt="upup"/>
+        製作屬於你的加油小人 &hearts; Haniboi &times; 嘖嘖 聯合出品
+      </a>
+
+    </section>
     
     <footer>
       &copy; 2013 嘖室股份有限公司 &times; Haniboi 版權所有

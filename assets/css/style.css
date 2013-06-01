@@ -34,7 +34,7 @@ header {
   background-repeat: no-repeat;
   background-position: 3px 100%; }
 
-.notice, .tell {
+.notice, .tell, .block {
   background-color: #eb9c00;
   border: 6px solid #000;
   font-weight: bold;
@@ -42,6 +42,20 @@ header {
   text-decoration: none;
   color: #000;
   display: block; }
+
+.fly-centre {
+  text-align: center; }
+
+.block {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  background-color: #ffff00;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-align: center; }
 
 .notice {
   padding: 10px;
@@ -61,6 +75,12 @@ header {
   .wall:after, .notice:after {
     clear: both; }
 
+.wall .column_left {
+  float: left;
+  margin-right: 20px; }
+.wall .column_right {
+  float: right; }
+
 .story {
   margin-bottom: 20px;
   width: 300px;
@@ -68,11 +88,6 @@ header {
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #e8e8e8; }
-  .story.col1 {
-    float: left;
-    margin-right: 20px; }
-  .story.col2 {
-    float: right; }
   .story:hover {
     background-color: #ffffee; }
   .story .author-img {

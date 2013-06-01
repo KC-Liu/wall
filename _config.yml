@@ -4,7 +4,7 @@ url:              http://upup.zeczec.com
 paginate:         50
 
 pygments:         true
-permalink:        none
+permalink:        pretty
 markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
