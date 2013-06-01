@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="wall">
+  {% for post in site.posts %}
+    {% tablerow story in post.stories cols: 2 %}
+      <div class="story col{{ tablerowloop.col }}">
+        <img src="{{ story.avatar }}" alt="{{ story.author }}" class="author-img" />
+        <span class="author-name">{{ story.author }}</span>
+        <div class="image-wrapper">
+          <div class="story-content">{{ story.message }}</div>
+          <a href="{{ story.origin }}" class="story-link" target="_blank">
+            <img src="{{ story.image }}" alt="{{ story.message }}" class="story-img" />
+          </a>
+        </div>
+      </div>
+    {% endtablerow %}
+  {% endfor %}
+</div>

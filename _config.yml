@@ -1,0 +1,29 @@
+title:            加油小人名人牆
+description:      收集愛和希望
+url:              http://upup.zeczec.com
+paginate:         50
+
+pygments:         true
+permalink:        none
+markdown:         rdiscount
+rdiscount:
+  extensions:     [smart]
+
+# Theme specific settings
+facebook_appid:   
+google_analytics: 
+disqus_shortname: 
+
+links: 
+  - name:         Home
+    url:          /
+  - name:         Categories
+    url:          /categories
+  - name:         About
+    url:          /about
+  - name:         Blog
+    url:          http://muan.co
+  - name:         Email
+    url:          mailto:._.@muan.co
+  - name:         GitHub
+    url:          http://github.com/muan
