@@ -4,46 +4,50 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-      {% assign title = site.title %}
-      {% assign description = site.description %}
-      <title>{{ title }}</title>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="viewport" content="width=device-width">
-      <meta name="description" content="{{ site.description }}">
+    <meta content='UPUP 舉牌加油小人產生器 - Haniboi x Zeczec' name='title' />
+    <meta content='UPUP 舉牌加油小人產生器 - Haniboi x Zeczec' name='og:title' />
+    <meta content="http://zeczec.haniboi.co/images/output.png" property="og:image" />
+    <meta name="description" content="UPUP 舉牌加油小人產生器 - 來自群眾集資平台「嘖嘖」和設計師「Haniboi」的聯手出擊！現在就一起來讓加油小人說出你的心聲！"><title>UPUP 舉牌加油小人產生器</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
 
-      <link rel="stylesheet" href="{{ site.baseurl }}assets/css/normalize.min.css">
-      <link rel="stylesheet" href="{{ site.baseurl }}assets/css/boilerplate.css">
-      <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css">
-      <script src="{{ site.baseurl }}assets/js/modernizr-2.6.2.min.js"></script>
-      <script src="{{ site.baseurl }}assets/js/jquery-1.9.1.min.js"></script>
-      <script type='text/javascript'>
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-          _gaq.push(['_trackPageview']);
-          
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-      </script>
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/normalize.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/boilerplate.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css">
+    <script src="{{ site.baseurl }}assets/js/modernizr-2.6.2.min.js"></script>
+    <script src="{{ site.baseurl }}assets/js/jquery-1.9.1.min.js"></script>
+    <script type='text/javascript'>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <link href='http://www.zeczec.com/assets/fav.png' rel='shortcut icon' type='image/x-icon'>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
+    <a href="mailto:hello@zeczec.com" class="tell">通風報信</a>
+
     <header>
       <a href="http://www.zeczec.com/" target="_blank"><img src="/assets/zeczec.png" alt="嘖嘖 zeczec" /></a>
       &times;
       <a href="http://www.haniboi.com/" target="_blank"><img src="/assets/haniboi.png" alt="Haniboi" /></a>
+      <p><strong>&hearts; UPUP 舉排加油小人名人牆 &hearts;</strong></p>
     </header>
 
     <section class="content">{{ content }}</section>
     
     <footer>
-      &copy; 2013 Haniboi X Zeczec Ltd, all rights reserved.
+      &copy; 2013 嘖室股份有限公司 &times; Haniboi 版權所有
     </footer>
 
   </body>

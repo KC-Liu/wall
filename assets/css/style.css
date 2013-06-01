@@ -11,9 +11,12 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-header {
+header, footer {
   text-align: center;
   padding: 20px;
+  font-weight: bold; }
+
+header {
   background-color: #303030;
   border-top: 3px solid #FAD300;
   margin-bottom: 20px;
@@ -22,14 +25,40 @@ header {
     height: 40px;
     padding: 0 20px; }
 
-.wall {
+.tell {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px 30px 10px 45px;
+  background-image: url(/assets/woo.png);
+  background-repeat: no-repeat;
+  background-position: 3px 100%; }
+
+.notice, .tell {
+  background-color: #eb9c00;
+  border: 6px solid #000;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  display: block; }
+
+.notice {
+  padding: 10px;
+  text-align: center; }
+  .notice img {
+    height: 30px;
+    margin: 0 auto 10px;
+    display: block; }
+
+.wall, .notice {
   *zoom: 1;
   width: 620px;
-  margin: 0 auto; }
-  .wall:before, .wall:after {
+  margin: 0 auto 20px; }
+  .wall:before, .wall:after, .notice:before, .notice:after {
     content: " ";
     display: table; }
-  .wall:after {
+  .wall:after, .notice:after {
     clear: both; }
 
 .story {
@@ -44,6 +73,8 @@ header {
     margin-right: 20px; }
   .story.col2 {
     float: right; }
+  .story:hover {
+    background-color: #ffffee; }
   .story .author-img {
     width: 30px;
     border-radius: 3px;
