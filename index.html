@@ -15,7 +15,7 @@ layout: default
         <span class="author-name">{{ story.author }}</span>
         <div class="image-wrapper">
           <div class="story-content">{{ story.message }}</div>
-          <a href="{{ story.origin }}" class="story-link" target="_blank">
+          <a href="{{ story.origin }}" class="story-link" target="_blank" id="{{ story.author }}">
             <img src="{{ story.image }}" alt="{{ story.message }}" class="story-img" />
           </a>
         </div>
