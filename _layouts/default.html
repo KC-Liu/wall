@@ -66,8 +66,9 @@
       </div>
 
       <div class="wall">
-        {% assign half = page.stories.size | divided_by: 2 | plus: 1 %}
-
+        {% assign half = page.stories.size | money | divided_by: 2 %}
+        {% assign num = half  | plus: 0.5 | times: 2 | devided_by: 1 %}
+        {% if num == page.stories.size %}{% assign half = half | plus: 1 %}{% endif %}
         <div class="column_left">
         {% for story in page.stories limit: half, offset: 0 %}
           <div class="story">
