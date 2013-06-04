@@ -59,10 +59,11 @@
       </a>
 
       <div class="wall fly-centre">
-        <a href="/" class="block">名人</a>
-        <a href="/press" class="block">媒體</a>
-        <a href="/bloggers" class="block">品牌、部落客</a>
-        <a href="/popular" class="block">熱門</a>
+        {% assign title = page.path | replace: ".html" %}
+        <a href="/" class="block {% if title == 'index' %}active{% endif %}">名人</a>
+        <a href="/press" class="block {% if title == 'press' %}active{% endif %}">媒體</a>
+        <a href="/bloggers" class="block {% if title == 'bloggers' %}active{% endif %}">品牌、部落客</a>
+        <a href="/popular" class="block {% if title == 'popular' %}active{% endif %}">熱門</a>
       </div>
 
       <div class="wall">

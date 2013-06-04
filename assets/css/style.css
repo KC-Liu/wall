@@ -52,10 +52,25 @@ header {
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   background-color: #ffff00;
   padding: 6px 16px;
   border-radius: 20px;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0 5px 0px #333;
+  position: relative;
+  top: -4px; }
+  .block.active, .block .active {
+    background-color: #f0dd00;
+    top: 0px;
+    box-shadow: 0 1px #555; }
+  .block:hover:not(.active) {
+    top: -2px;
+    box-shadow: 0 3px #555; }
 
 .notice {
   padding: 10px;
